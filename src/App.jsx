@@ -1,7 +1,9 @@
+import { products } from "./mocks/products.json";
+import { Products } from "./components/Products";
+
+
 export const App = () => {
   return (
-    <div>
-      <h1>Shooping Cart</h1>
-    </div>
-  );
+  <Products products={products} />
+)
 };
