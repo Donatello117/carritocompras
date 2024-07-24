@@ -1,10 +1,13 @@
+import { useFilters } from "../hooks";
 import "./Footer.css";
 
-export function Footer({ filters }) {
+export function Footer() {
+  const { filters } = useFilters();
+
   return (
     <footer className="footer">
       {JSON.stringify(filters, null, 2)}
-      
+
       {/*<h4>
         Prueba tecnica de Reaact + -<span>@Doni</span>
       </h4>
